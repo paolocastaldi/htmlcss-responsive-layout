@@ -189,6 +189,102 @@ main{
 }
 
 
+/* TERZA SESSIONE */
+
+.text-card-third-section{
+    text-align: center;
+}
+
+.text-card-third-section h1{
+    color: var(--lilac);
+}
+
+.text-card-third-section p{
+    color: black;
+}
+
+.card-third-section{
+    background-color: var(--lilac);
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.text-image-third-section{
+    text-align: center;
+}
+.text-image-third-section > *{
+    padding: 20px 0;
+    color: white;
+}
+
+.box-image-third-section{
+    width: 100px;
+    height: 100px;
+}
+
+.box-image-third-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 100%;
+} 
+
+/* QUARTA SEZIONE */
+
+.fourth-section{
+    background-color: var(--lilac);
+}
+
+.fourth-section .container .title-fouth-section{
+    text-align: center;
+    margin: 50px 0;
+    color: white;
+}
+
+.container-cards-fourth-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.fourth-section .card-fourth-section{
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 30px;
+    margin: 10px 0;   
+}
+
+.fourth-section .card-fourth-section > *{
+    margin: 10px 0;
+}
+
+.fourth-section .card-fourth-section h1,
+.fourth-section .card-fourth-section h3{
+    color: var(--lilac);
+    text-align: left;
+}
+
+.fourth-section .card-fourth-section h1{
+    font-size: 3.5rem;
+}
+
+.fourth-section .card-fourth-section a{
+    background-color: var(--lilac);
+    padding: 5px 50px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/*QUERY ZONE*/
+
 
 /*HEADER QUERY*/
 
@@ -225,14 +321,35 @@ main{
         width: 30%;
     }
 
-    
-
     /* SECONDA SEZIONE QUERY*/
     .card-right{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
+
+     /* TERZA SEZIONE QUERY*/
+    .card-third-section{
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card-third-section .box-image-third-section{
+        max-width: 30%;
+    }
+    .card-third-section .text-image-third-section{
+        max-width: 70%;
+        text-align: left; 
+    }
+
+      /* QUARTA SEZIONE QUERY*/
+     .container-cards-fourth-section{
+        width: 100%;
+    }
+    .fourth-section .card-fourth-section{
+        width: calc(100% / 2 - 10px);
+    }
+
+
 }
 
 @media all and (min-width: 992px) {
@@ -294,5 +411,13 @@ main{
     .card-right .text-card{
         font-size: 12px;
         font-weight: bold;
+    }
+
+     /* QUARTA SEZIONE */
+     .container-cards-fourth-section{
+        width: 100%;
+    }
+    .fourth-section .card-fourth-section{
+        width: calc(100% / 3 - 10px);
     }
 }
